@@ -12,7 +12,10 @@ abstract class Veiculo (
 
     abstract fun acelerar()
 
-    //abstract fun Eletrificado()
+    open fun acelerar(intensidade: Int) {
+        println("Intensidade da aceleração: $intensidade")
+    }
+
 }
 
 class Carro3(nome: String, qtdRodas: Int) : Veiculo() {
@@ -23,7 +26,10 @@ class Carro3(nome: String, qtdRodas: Int) : Veiculo() {
     override fun acelerar() {
 
         println("Acelerar $nome com $qtdRodas rodas.")
+        acelerar(2)
     }
+
+
 }
 
 class Moto(nome: String, qtdRodas: Int) : Veiculo(), Eletrificado {
@@ -39,6 +45,7 @@ class Moto(nome: String, qtdRodas: Int) : Veiculo(), Eletrificado {
 
         println("Acelerar $nome com $qtdRodas rodas.")
         motorEletrico()
+        acelerar(4)
     }
 
 }
@@ -49,10 +56,12 @@ fun main() {
     //println("Nome: ${carrao.nome}")
     //println("Quantidade de Rodas: ${carrao.qtdRodas}")
     carrao.acelerar()
+    //carrao.acelerar(3)
 
     val motao = Moto("Harley Davidson Ultra Limited",2)
     //println("Nome: ${motao.nome}")
     //println("Quantidade de Rodas: ${motao.qtdRodas}")
     motao.acelerar()
+    //motao.acelerar(4)
 
 }
