@@ -41,7 +41,6 @@ class Moto(nome: String, qtdRodas: Int) : Veiculo(), Eletrificado {
         motorEletrico()
     }
 
-
 }
 
 fun main() {
