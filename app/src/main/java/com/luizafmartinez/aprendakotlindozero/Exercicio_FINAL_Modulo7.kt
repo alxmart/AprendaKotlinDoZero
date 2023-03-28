@@ -9,7 +9,6 @@ enum class StatusVeiculo {
 }
 
 interface Eletrificado {
-
     fun motorEletrico() {
         println("Rodando com motor elétrico.")
     }
@@ -20,7 +19,6 @@ abstract class Veiculo (
     qtdRodas: Int = 0,
     status: String = ""
     ) {
-
     abstract fun acelerar()
 
     open fun acelerar(intensidade: Int) {
@@ -50,7 +48,6 @@ class Carro3(
     }
 
     companion object {
-
         fun exibeMensagemVelocidadeMaximaLei(velmax: Int) {
             println("Velocidade Máxima permitida por Lei é de: $velmax Km/h")
         }
@@ -80,7 +77,6 @@ class Moto(
     }
 
     companion object {
-
         fun exibeMensagemVelocidadeMaximaLei(velmax: Int) {
             println("Velocidade Máxima permitida por Lei é de: $velmax Km/h")
         }
