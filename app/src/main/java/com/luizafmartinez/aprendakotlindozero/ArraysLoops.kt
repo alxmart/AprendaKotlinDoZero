@@ -11,10 +11,7 @@ fun main() {
 //    println( nomes[0] )
 //    println( nomes[1] )
 //    println( nomes[2] )
-//
-//
-//
-//
+
 
 //    for ( numero in 3..10 ){
 //        println( "Executou: $numero" )
@@ -26,8 +23,13 @@ fun main() {
         "Levei meu cachorro no veterinário",//1
         "Trilha com os amigos"//2
     )
+
     for ( (indice, postagem) in postagens.withIndex() ){
         println("$indice: $postagem")
+    }
+
+    for(meuIndex in 1..5) {
+        println("$meuIndex")
     }
 
 }

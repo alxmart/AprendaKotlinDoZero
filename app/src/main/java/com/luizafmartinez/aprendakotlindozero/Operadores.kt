@@ -34,9 +34,13 @@ fun main() {
     println(resultado8) // true
     println("Resultado 8 agora é ${!resultado8}") //false
 
+    //-----------------------------------------------------------------
+
     val idadePessoa = 50
     val comprasPessoa = 500
+
     val resultado9 = idadePessoa >= 50 && comprasPessoa >= 400
+
     println(resultado9)
 
 
