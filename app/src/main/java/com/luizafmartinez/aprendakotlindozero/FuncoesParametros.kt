@@ -1,15 +1,14 @@
 package com.luizafmartinez.aprendakotlindozero
 
-fun somar( numero1: Int,
-           numero2: Int = 0,
-           numero3: Int = 0 ){
+fun somar( num1: Int, num2: Int = 0, num3: Int = 0 ){
 
-    println( numero1 + numero2 + numero3 )
+    println( num1 + num2 + num3 )
 }
 
 fun main() {
 
-    //somar(10, numero3 = 10)
-    somar(numero2 = 10, numero1 = 5 )
+    somar(10, num3 = 10)
+
+    somar(num2 = 10, num1 = 5 )
 
 }
