@@ -40,14 +40,4 @@ fun main() {
     println(resultado9)
 
 
-
-
-
-
-
-
-
-
-
-
 }
