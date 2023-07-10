@@ -1,29 +1,21 @@
 package com.luizafmartinez.aprendakotlindozero
-
 open class Animal {      //"Toda classe em kotlin é final"
-
     var cor = ""
     var tamanho = "" // pequeno , medio , grande porte
     var peso = 0.0
 
     //Metodo ("Função dentro de uma classe é um método")
     //fun correr() = println("Correr")
-
     open fun correr() {   // "Por padrão, todo método é final"
         print("Correr como um")
     }
-
     //fun dormir() = println("Correr")
-
     open fun dormir() {   // "Por padrão, todo método é final"
         println("Dormir...")
     }
 }
-
     class Cao : Animal() {   // Subclasse ou classe filha de Animal
-
         //fun latir() = println("Latir...")
-
         fun latir() {
              println("Latir...")
         }
