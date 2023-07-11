@@ -1,5 +1,4 @@
 package com.luizafmartinez.aprendakotlindozero
-
 interface Presidenciavel {
   fun candidatarSe()
 }
@@ -7,8 +6,6 @@ interface Presidenciavel {
 abstract class Pessoa {
     fun comer() = println("Comer...")
 }
-
-
 
 class DesenvolvedorAndroid : Pessoa() {
     fun programar() = println("Programar")
@@ -19,9 +16,7 @@ class DesenvolvedorWeb : Pessoa() {
 }
 
 class Jornalista : Pessoa(), Presidenciavel {
-
     fun escreverNoticia() = println("Escrever Notícia")
-
     override fun candidatarSe() {
         println("Fazer o processo para se candidatar.")
     }
