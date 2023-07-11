@@ -1,9 +1,8 @@
 package com.luizafmartinez.motorista
-
-
-fun main() {
-
-
-
-
-}
+//
+//import com.luizafmartinez.recursos.Usuario
+//
+//fun main() {
+//    val usuario = Usuario()
+//    usuario.nome = "Jaja"
+//}
